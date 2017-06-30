@@ -2,7 +2,7 @@
 html {
   background-color: #F2F1E8;
   color: #131511;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Merriweather', 'Roboto', sans-serif;
 }
 
 body {
@@ -44,13 +44,19 @@ nav {
   width: 100%;
 }
 
-nav ul li img {
+#site-navigation {
+  padding: 10px
+}
+
+#site-navigation img {
   height: 30px;
+  margin-top: 6px;
   width: auto;
+  float: left;
 }
 
 nav ul li {
-  padding: 10px 0;
+  padding: 10px 30px;
   text-transform: uppercase;
 }
 
@@ -58,7 +64,7 @@ nav ul {
   list-style: none;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 nav a {
@@ -68,6 +74,8 @@ nav a {
 nav a:hover {
   color: #CD5D67;
 }
+
+
 
 h1, h2 {
   text-align: center;
@@ -124,6 +132,59 @@ h1, h2 {
 
 .about-divider h1 {
   font-size: 3em;
+}
+
+/*NEWSLETTER PAGE*/
+#newsletter {
+  background-image: url("images/background-2.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#newsletter .signup {
+  background-color: #FFFFFF;
+  height: 30%;
+  width: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.signup h1 {
+  font-size: 2em;
+  font-weight: 300;
+}
+
+.signup h2 {
+  font-size: 1.5em;
+  font-weight: 400;
+  margin-bottom: 45px;
+}
+
+/*FORM ELEMENTS*/
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  -webkit-appearance:none;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  font-size: 1.3em;
+  width: 100%;
+}
+
+#submitButton {
+  padding: 15px 28px;
+  color: white;
+  font-size: 1.3em;
+  background-color: #968773;
+  border: none;
+  width: 140px;
 }
 
 /*TABLE ELEMENTS*/
