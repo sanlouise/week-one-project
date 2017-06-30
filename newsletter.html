@@ -19,12 +19,38 @@
     </header>
 
     <main>
+      <section class="signup">
+        <h1>Sign Up For Our Weekly Newsletter</h1>
+        <h2>Stay up tp date with events, activities, news and specials.</h2>
 
+        <form>
+          <input type="text" name="firstname" id="nameInput"><br>
+          <input type="text" name="lastname" id="emailInput">
+        </form>
+
+      </section>
     </main>
 
     <footer>
       Copyright 2017, Benthouse Creek
     </footer>
+
+    <script type="text/javascript">
+      var nameInput = document.getElementById('nameInput');
+      var emailInput = document.getElementById('emailInput');
+      var signupButton = document.getElementById('signupButton');
+      signupButton.addEventListener('click', function(e) {
+        var nameVal = nameInput.value;
+        var emailVal = emailInput.value;
+        if (nameVal && emailVal) {
+          alert('Thanks for signing up, ' + nameVal + '. Newsletters will be sent to ' + emailVal);
+          nameInput.value = "";
+          emailInput.value = "";
+        } else {
+          alert('We would love for you to sign up, please provide both your name and email address.');
+        }
+      });
+    </script>
 
   </body>
 </html>
