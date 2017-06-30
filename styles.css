@@ -15,6 +15,7 @@ body {
 
 main {
   flex: 1;
+  padding-top: 50px;
 }
 
 footer {
@@ -39,6 +40,8 @@ ul {
 nav {
   height: 40px;
   background-color: #FFFFFF;
+  position: fixed;
+  width: 100%;
 }
 
 nav ul li img {
@@ -58,7 +61,7 @@ nav ul {
   justify-content: space-between;
 }
 
-nav a{
+nav a {
   color: #2B2F26;
 }
 
@@ -78,12 +81,70 @@ h1, h2 {
   align-content: space-between;
 }
 
+#images-row--first {
+  width: 90%;
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+#images-row--second {
+  width: 90%;
+  flex-wrap: wrap;
+}
+
 #images-row--first img {
   height: 250px;
   width: auto;
+  margin: 10px;
 }
 
 #images-row--second img {
   height: 170px;
   width: auto;
+  margin: 10px;
+}
+
+/*ABOUT PAGE*/
+.about-intro img {
+  margin: 0px 15px 15px 0px;
+  height: 100px;
+  float: left;
+}
+
+.about-divider {
+  background-image: url("images/background-3.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  width: auto;
+  color: #FFF;
+  background-size: cover;
+}
+
+.about-divider h1 {
+  font-size: 3em;
+}
+
+/*TABLE ELEMENTS*/
+table {
+  border: 1px #1fabe5 solid;
+  border-collapse: collapse;
+  margin: 0;
+}
+
+table th td {
+  background-color: #1fabe5;
+  color: white;
+  border: 1px #046c97 solid;
+}
+
+tr:nth-child(even) {
+  background-color: ;
+}
+
+table td {
+  padding: 10px;
+  margin: 0;
+  border: 1px #1fabe5 solid;
 }
