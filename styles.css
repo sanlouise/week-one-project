@@ -1,0 +1,61 @@
+/*GENERAL STYLES*/
+html {
+  background-color: #F2F1E8;
+  color: #131511;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #968772;
+}
+
+a:hover {
+  color: #967343
+}
+
+ul {
+  margin: 0;
+}
+
+/*NAV STYLES*/
+nav {
+  height: 40px;
+  background-color: #FFFFFF;
+}
+
+nav ul li img {
+  height: 30px;
+  width: auto;
+}
+
+nav ul li {
+  padding: 10px 0;
+  text-transform: uppercase;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+nav a{
+  color: #2B2F26;
+}
+
+nav a:hover {
+  color: #CD5D67;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+h2 {
+
+}
