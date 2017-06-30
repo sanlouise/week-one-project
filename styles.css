@@ -2,11 +2,25 @@
 html {
   background-color: #F2F1E8;
   color: #131511;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
   margin: 0;
   padding: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  background-color: #2B2F26;
+  padding: 15px;
+  color: #FFFFFF;
 }
 
 a {
@@ -56,6 +70,20 @@ h1, h2 {
   text-align: center;
 }
 
-h2 {
+/*IMAGES*/
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+}
 
+#images-row--first img {
+  height: 250px;
+  width: auto;
+}
+
+#images-row--second img {
+  height: 170px;
+  width: auto;
 }
