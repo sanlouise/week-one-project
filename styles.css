@@ -152,6 +152,10 @@ h1, h2 {
   height: 250px;
   width: auto;
   color: #FFF;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -226,6 +230,10 @@ input {
   border-left: none;
   font-size: 1.3em;
   width: 100%;
+}
+
+input:focus{
+  outline: none;
 }
 
 #submitButton {
