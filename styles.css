@@ -86,18 +86,21 @@ h1, h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-content: space-between;
+  align-content: center;
 }
 
 #images-row--first {
-  width: 90%;
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
+  overflow: hidden;
+  width: 1000px;
+  height: 400px;
 }
 
 #images-row--second {
-  width: 90%;
-  flex-wrap: wrap;
+  display: flex;
+  align-items: row;
+  overflow: hidden;
 }
 
 #images-row--first img {
@@ -112,7 +115,30 @@ h1, h2 {
   margin: 10px;
 }
 
+#first-image {
+  background-image: url('images/product-1.jpg');
+  background-size: cover;
+  width: 360px;
+  height: 230px;
+}
+
+#fourth-image, #fifth-image {
+  background-size: cover;
+  width: 800px;
+  height: 400px;
+}
+
+#fourth-image {
+  background-image: url('images/product-1.jpg');
+}
+
+
+
 /*ABOUT PAGE*/
+
+.wrapper {
+  margin: 0 300px;
+}
 .about-intro img {
   margin: 0px 15px 15px 0px;
   height: 100px;
@@ -132,6 +158,11 @@ h1, h2 {
 
 .about-divider h1 {
   font-size: 3em;
+}
+
+blockquote {
+  border-left: 2px solid #CCCCCC;
+  padding-left: 20px;
 }
 
 /*NEWSLETTER PAGE*/
@@ -189,7 +220,7 @@ input {
 
 /*TABLE ELEMENTS*/
 table {
-  border: 1px #1fabe5 solid;
+  border: 1px #000000 solid;
   border-collapse: collapse;
   margin: 0;
 }
@@ -197,15 +228,15 @@ table {
 table th td {
   background-color: #1fabe5;
   color: white;
-  border: 1px #046c97 solid;
+  border: 1px #000000 solid;
 }
 
 tr:nth-child(even) {
-  background-color: ;
+  background-color: #F3EADA;
 }
 
 table td {
   padding: 10px;
   margin: 0;
-  border: 1px #1fabe5 solid;
+  border: 1px #000000 solid;
 }
