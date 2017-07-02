@@ -11,6 +11,7 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  font-size: 16px;
 }
 
 main {
@@ -75,8 +76,6 @@ nav a:hover {
   color: #CD5D67;
 }
 
-
-
 h1, h2 {
   text-align: center;
 }
@@ -84,9 +83,22 @@ h1, h2 {
 /*IMAGES*/
 .images {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   align-content: center;
+  flex-wrap: wrap;
+  padding: 48px;
+}
+
+.images img {
+  background-size: cover;
+}
+
+.images p {
+  font-family: 'Merriweather', 'Roboto', serif;
+  background-color: #2A3025;
+  color: #F2F1E8;
+  margin-top: 20%;
+  padding: 8px 16px;
+  position: absolute;
 }
 
 #images-row--first {
@@ -94,42 +106,73 @@ h1, h2 {
   flex-wrap: wrap;
   overflow: hidden;
   width: 1000px;
-  height: 400px;
+  height: 384px;
+}
+
+#images-row--first img {
+  margin: 8px 8px;
+  height: 368px;
+}
+
+#images-row--first p {
+  margin-top: 20%;
 }
 
 #images-row--second {
   display: flex;
   align-items: row;
   overflow: hidden;
-}
-
-#images-row--first img {
-  height: 250px;
-  width: auto;
-  margin: 10px;
+  height: 240px;
 }
 
 #images-row--second img {
-  height: 170px;
-  width: auto;
-  margin: 10px;
+  margin: 0 8px;
+}
+
+#images-row--second p {
+  margin-top: 12%;
 }
 
 #first-image {
+  width: 520px;
   background-image: url('images/product-1.jpg');
   background-size: cover;
-  width: 360px;
-  height: 230px;
 }
 
-#fourth-image, #fifth-image {
+#second-image {
+  width: 240px;
+  background-image: url('images/product-2.jpg');
   background-size: cover;
-  width: 800px;
-  height: 400px;
+}
+
+#third-image {
+  width: 240px;
+  background-image: url('images/product-3.jpg');
+  background-size: cover;
 }
 
 #fourth-image {
-  background-image: url('images/product-1.jpg');
+  width: 256px;
+  background-image: url('images/product-4.jpg');
+  background-size: cover;
+}
+
+#fifth-image {
+  width: 256px;
+  background-image: url('images/product-5.jpg');
+  background-size: cover;
+}
+
+#sixth-image {
+  width: 296px;
+  background-image: url('images/product-6.jpg');
+  background-size: cover;
+}
+
+#seventh-image {
+  width: 256px;
+  background-image: url('images/product-7.jpg');
+  background-size: cover;
 }
 
 /*ABOUT PAGE*/
@@ -186,9 +229,18 @@ blockquote {
   font-style: italic;
 }
 
+.about-facilities{
+  display: flex;
+  flex-direction: row;
+}
+
+.about-facilities p{
+  width: 70%;
+}
+
 figure{
   float: right;
-  width: 160px;
+  width: 30%;
 }
 
 figure img{
