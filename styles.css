@@ -21,7 +21,7 @@ main {
 
 footer {
   background-color: #2B2F26;
-  padding: 15px;
+  padding: 25px;
   color: #FFFFFF;
 }
 
@@ -43,10 +43,11 @@ nav {
   background-color: #FFFFFF;
   position: fixed;
   width: 100%;
+  box-shadow: 0px 0px 3px 1px #2B2F26;
 }
 
 #site-navigation {
-  padding: 10px
+  padding: 10px;
 }
 
 #site-navigation img {
@@ -76,17 +77,36 @@ nav a:hover {
   color: #CD5D67;
 }
 
+.active {
+  color: #968772;
+}
+
 h1, h2 {
   text-align: center;
 }
 
-/*IMAGES*/
+/*HOME*/
+
+#home h1 {
+  font-size: 50px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+#home h2 {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 27px;
+  font-weight: 300;
+}
+
+/*HOME IMAGES*/
 
 .images {
   display: flex;
   align-content: center;
   flex-wrap: wrap;
-  padding: 48px;
+  padding: 0 48px 10px 48px;
 }
 
 .images img {
@@ -261,11 +281,11 @@ figcaption{
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100vh;
 }
 
 #newsletter .signup {
   background-color: #FFFFFF;
-  height: 30%;
   width: auto;
   padding: 20px;
   display: flex;
@@ -295,18 +315,20 @@ input {
   border-top: none;
   border-right: none;
   border-left: none;
-  font-size: 1.3em;
+  border-bottom: 2px solid #968772;
+  font-size: 20px;
   width: 100%;
 }
 
 input:focus{
   outline: none;
+  border-bottom: 2px solid #967343;
 }
 
 #submitButton {
   padding: 15px 28px;
   color: white;
-  font-size: 1.3em;
+  font-size: 20px;
   background-color: #968773;
   border: none;
   width: 140px;
