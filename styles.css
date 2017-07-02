@@ -132,8 +132,6 @@ h1, h2 {
   background-image: url('images/product-1.jpg');
 }
 
-
-
 /*ABOUT PAGE*/
 .wrapper {
   margin: 0 300px;
@@ -186,6 +184,21 @@ blockquote {
   padding-left: 20px;
   font-weight: 300;
   font-style: italic;
+}
+
+figure{
+  float: right;
+  width: 160px;
+}
+
+figure img{
+  width: 160px;
+  height: auto;
+}
+
+figcaption{
+  font-size: 12px;
+  line-height: 1.5em;
 }
 
 /*NEWSLETTER PAGE*/
@@ -243,6 +256,11 @@ input:focus{
   background-color: #968773;
   border: none;
   width: 140px;
+}
+
+#submitButton:hover{
+  background-color: #967343;
+  color: #FFFFFF;
 }
 
 /*TABLE ELEMENTS*/
