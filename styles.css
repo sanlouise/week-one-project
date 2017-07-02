@@ -214,8 +214,7 @@ h1, h2 {
   justify-content: center;
   height: 250px;
   width: auto;
-  color: #FFF;
-  /* Create the parallax scrolling effect */
+  color: #FFFFFF;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -225,6 +224,10 @@ h1, h2 {
 .about-divider h1 {
   font-size: 3em;
   font-weight: 300;
+}
+
+.about-history {
+  margin-bottom: 30px;
 }
 
 .wrapper {
@@ -249,6 +252,7 @@ blockquote {
   padding-left: 20px;
   font-weight: 300;
   font-style: italic;
+  margin-left: 0;
 }
 
 .about-facilities{
@@ -293,12 +297,13 @@ figcaption{
 }
 
 .signup h1 {
-  font-size: 2em;
+  font-size: 32px;
   font-weight: 300;
+  margin-bottom: 0;
 }
 
 .signup h2 {
-  font-size: 1.5em;
+  font-size: 20px;
   font-weight: 400;
   margin-bottom: 45px;
 }
@@ -316,8 +321,9 @@ input {
   border-right: none;
   border-left: none;
   border-bottom: 2px solid #968772;
-  font-size: 20px;
+  font-size: 18px;
   width: 100%;
+  padding: 4px;
 }
 
 input:focus{
