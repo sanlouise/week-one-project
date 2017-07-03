@@ -255,26 +255,26 @@ blockquote {
   margin-left: 0;
 }
 
-.about-facilities{
+.about-facilities {
   display: flex;
   flex-direction: row;
 }
 
-.about-facilities p{
+.about-facilities p {
   width: 70%;
 }
 
-figure{
+figure {
   float: right;
   width: 30%;
 }
 
-figure img{
+figure img {
   width: 160px;
   height: auto;
 }
 
-figcaption{
+figcaption {
   font-size: 12px;
   line-height: 1.5em;
 }
@@ -326,7 +326,7 @@ input {
   padding: 4px;
 }
 
-input:focus{
+input:focus {
   outline: none;
   border-bottom: 2px solid #967343;
 }
@@ -338,9 +338,10 @@ input:focus{
   background-color: #968773;
   border: none;
   width: 140px;
+
 }
 
-#submitButton:hover{
+#submitButton:hover {
   background-color: #967343;
   color: #FFFFFF;
 }
@@ -356,12 +357,6 @@ table {
 table thead td {
   text-align: center;
   background-color: #F2F1E8;
-}
-
-table th td {
-  background-color: #1fabe5;
-  color: white;
-  border: 1px #000000 solid;
 }
 
 tr:nth-child(odd) {
