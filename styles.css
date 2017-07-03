@@ -6,12 +6,12 @@ html {
 }
 
 body {
-  margin: 0;
-  padding: 0;
   display: flex;
-  min-height: 100vh;
   flex-direction: column;
   font-size: 16px;
+  margin: 0;
+  min-height: 100vh;
+  padding: 0;
 }
 
 main {
@@ -21,8 +21,8 @@ main {
 
 footer {
   background-color: #2B2F26;
-  padding: 25px;
   color: #FFFFFF;
+  padding: 25px;
 }
 
 a {
@@ -30,20 +30,24 @@ a {
 }
 
 a:hover {
-  color: #967343
+  color: #967343;
 }
 
 ul {
   margin: 0;
 }
 
+h1, h2 {
+  text-align: center;
+}
+
 /*NAV STYLES*/
 nav {
-  height: 40px;
   background-color: #FFFFFF;
+  box-shadow: 0px 0px 3px 1px #2B2F26;
+  height: 40px;
   position: fixed;
   width: 100%;
-  box-shadow: 0px 0px 3px 1px #2B2F26;
 }
 
 #site-navigation {
@@ -51,10 +55,10 @@ nav {
 }
 
 #site-navigation img {
+  float: left;
   height: 30px;
   margin-top: 6px;
   width: auto;
-  float: left;
 }
 
 nav ul li {
@@ -63,10 +67,10 @@ nav ul li {
 }
 
 nav ul {
-  list-style: none;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  list-style: none;
 }
 
 nav a {
@@ -81,12 +85,7 @@ nav a:hover {
   color: #968772;
 }
 
-h1, h2 {
-  text-align: center;
-}
-
 /*HOME*/
-
 #home h1 {
   font-size: 50px;
   font-weight: 400;
@@ -94,17 +93,16 @@ h1, h2 {
 }
 
 #home h2 {
-  margin-top: 0;
-  margin-bottom: 30px;
   font-size: 27px;
   font-weight: 300;
+  margin-bottom: 30px;
+  margin-top: 0;
 }
 
 /*HOME IMAGES*/
-
 .images {
-  display: flex;
   align-content: center;
+  display: flex;
   flex-wrap: wrap;
   padding: 0 48px 10px 48px;
 }
@@ -114,9 +112,9 @@ h1, h2 {
 }
 
 .images p {
-  font-family: 'Merriweather', 'Roboto', serif;
   background-color: #2A3025;
   color: #F2F1E8;
+  font-family: 'Merriweather', 'Roboto', serif;
   margin-top: 20%;
   padding: 8px 16px;
   position: absolute;
@@ -125,10 +123,10 @@ h1, h2 {
 #images-row--first {
   display: flex;
   flex-wrap: wrap;
-  overflow: hidden;
-  margin: 0 30px;
-  width: 1280px;
   height: 350px;
+  margin: 0 30px;
+  overflow: hidden;
+  width: 1280px;
 }
 
 #images-row--first p {
@@ -136,11 +134,11 @@ h1, h2 {
 }
 
 #images-row--second {
-  display: flex;
   align-items: row;
-  overflow: hidden;
-  margin: 0 30px;
+  display: flex;
   height: 220px;
+  margin: 0 30px;
+  overflow: hidden;
   width: 1280px;
 }
 
@@ -149,31 +147,31 @@ h1, h2 {
 }
 
 #first-image {
-  width: 640px;
   background-image: url('images/product-1.jpg');
   background-size: cover;
   margin: 8px 8px;
+  width: 640px;
 }
 
 #second-image {
-  width: 200px;
   background-image: url('images/product-2.jpg');
   background-size: cover;
   margin: 8px 8px;
+  width: 200px;
 }
 
 #third-image {
-  width: 200px;
   background-image: url('images/product-3.jpg');
   background-size: cover;
   margin: 8px 8px;
+  width: 200px;
 }
 
 #fourth-image {
-  width: 230px;
   background-image: url('images/product-4.jpg');
   background-size: cover;
   margin: 8px 8px;
+  width: 230px;
 }
 
 #fifth-image {
@@ -184,17 +182,17 @@ h1, h2 {
 }
 
 #sixth-image {
-  width: 480px;
   background-image: url('images/product-6.jpg');
   background-size: cover;
   margin: 8px 8px;
+  width: 480px;
 }
 
 #seventh-image {
-  width: 230px;
   background-image: url('images/product-7.jpg');
   background-size: cover;
   margin: 8px 8px;
+  width: 230px;
 }
 
 /*ABOUT PAGE*/
@@ -281,19 +279,19 @@ figcaption {
 
 /*NEWSLETTER PAGE*/
 #newsletter {
+  align-items: center;
   background-image: url("images/background-2.jpg");
   display: flex;
-  align-items: center;
-  justify-content: center;
   height: 100vh;
+  justify-content: center;
 }
 
 #newsletter .signup {
   background-color: #FFFFFF;
-  width: auto;
-  padding: 20px;
   display: flex;
   flex-direction: column;
+  padding: 20px;
+  width: auto;
 }
 
 .signup h1 {
@@ -310,20 +308,20 @@ figcaption {
 
 /*FORM ELEMENTS*/
 form {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 input {
   -webkit-appearance:none;
-  border-top: none;
-  border-right: none;
-  border-left: none;
   border-bottom: 2px solid #968772;
+  border-left: none;
+  border-right: none;
+  border-top: none;
   font-size: 18px;
-  width: 100%;
   padding: 4px;
+  width: 100%;
 }
 
 input:focus {
@@ -332,13 +330,12 @@ input:focus {
 }
 
 #submitButton {
-  padding: 15px 28px;
-  color: white;
-  font-size: 20px;
   background-color: #968773;
   border: none;
+  color: white;
+  font-size: 20px;
+  padding: 15px 28px;
   width: 140px;
-
 }
 
 #submitButton:hover {
@@ -348,15 +345,15 @@ input:focus {
 
 /*TABLE ELEMENTS*/
 table {
-  border: 1px #000000 solid;
   border-collapse: collapse;
+  border: 1px #000000 solid;
   font-weight: 300;
   margin: 0 0 30px 0;
 }
 
 table thead td {
-  text-align: center;
   background-color: #F2F1E8;
+  text-align: center;
 }
 
 tr:nth-child(odd) {
@@ -364,7 +361,7 @@ tr:nth-child(odd) {
 }
 
 table td {
-  padding: 10px;
-  margin: 0;
   border: 1px #000000 solid;
+  margin: 0;
+  padding: 10px;
 }
